@@ -18,7 +18,7 @@ function Habilidades(){
             </ul>
           </div>
           <div className="hab-type-explain">
-            <img src="/walt-port-v2/build/images/Brazuca - Planning.png" alt="skills" />
+            <img src="/images/Brazuca - Planning.png" alt="skills" />
           </div>
       </div>
       <div className="skills">

@@ -6,7 +6,7 @@ function Header(){
     <div className="header">
       <div className="cont-header">
         <div className="cont-img-sociales">
-          <img src="/walt-port-v2/build/images/20210621_090137.jpg" alt="Walter Astudillo Z" />
+          <img src="/images/20210621_090137.jpg" alt="Walter Astudillo Z" />
           <div className="sociales">
             <ul>
               <li><a href="https://www.instagram.com/walter.astudillo.z" target="_blank" rel="noopener">
