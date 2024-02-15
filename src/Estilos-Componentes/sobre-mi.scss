@@ -1,0 +1,135 @@
+@use './base/base';
+
+.sobremi{
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--font-Inconsolata);
+  display: grid;
+  place-content: center;
+  .cont-sobremi{
+    position: relative;
+    padding: 3em;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--Color4);
+    gap: 1.5em;
+    >h1{
+      width: max-content;
+      text-decoration: none;
+      border-bottom: 1px solid var(--Color4);
+      padding-bottom: 2px;
+    }
+    .texto-sobremi{
+      >p{
+        line-height: 1.5;
+        text-wrap: balance;
+        #resalt{
+          color: var(--Color2);
+        }
+      }
+    }
+  }
+  .cont-sobremi::before,.cont-sobremi::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    
+  }
+  .cont-sobremi::before{
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--Color3); 
+    border-left: 2px solid var(--Color3);
+  }
+  .cont-sobremi::after{
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid var(--Color3); 
+    border-right: 2px solid var(--Color3);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .sobremi{
+    .cont-sobremi{
+      position: relative;
+      padding: 2em;
+      width: 90vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--Color4);
+      gap: 1.5em;
+      >h1{
+        font-size: 1.8em;
+        width: max-content;
+        text-decoration: none;
+        border-bottom: 1px solid var(--Color4);
+        padding-bottom: 2px;
+      }
+      .texto-sobremi{
+        >p{
+          font-size: 1em;
+          line-height: 1.5;
+          text-wrap: balance;
+          #resalt{
+            color: var(--Color2);
+          }
+        }
+      }
+    }
+    .cont-sobremi::before,.cont-sobremi::after{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sobremi{
+    .cont-sobremi{
+      position: relative;
+      padding: 2em;
+      width: 95vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--Color4);
+      gap: 1.5em;
+      >h1{
+        font-size: 1.5em;
+        width: max-content;
+        text-decoration: none;
+        border-bottom: 1px solid var(--Color4);
+        padding-bottom: 2px;
+      }
+      .texto-sobremi{
+        >p{
+          font-size: 14px;
+          line-height: 1.5;
+          text-wrap: balance;
+          #resalt{
+            color: var(--Color2);
+          }
+        }
+      }
+    }
+    .cont-sobremi::before,.cont-sobremi::after{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      
+    }
+  }
+
+}

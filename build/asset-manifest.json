@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/walt-port-v2/build/static/css/main.27c65d62.css",
+    "main.js": "/walt-port-v2/build/static/js/main.676859fb.js",
+    "index.html": "/walt-port-v2/build/index.html",
+    "main.27c65d62.css.map": "/walt-port-v2/build/static/css/main.27c65d62.css.map",
+    "main.676859fb.js.map": "/walt-port-v2/build/static/js/main.676859fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27c65d62.css",
+    "static/js/main.676859fb.js"
+  ]
+}

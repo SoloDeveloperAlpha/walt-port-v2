@@ -1,0 +1,169 @@
+@use './base/base';
+
+.proy{
+  width: 100vw;
+  height: calc(100vh + auto); 
+  font-family: var(--font-Inconsolata);
+  display: grid;
+  place-content: center;
+  padding-top: 3em;
+  .cont-proy{
+    position: relative;
+    width: 75vw;
+    height: auto;
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    .proy-titulo{
+      width: 75vw;
+      >h1{
+        width: max-content;
+        color: var(--Color4);
+        border-bottom: 1px solid var(--Color4);
+        margin-bottom: 1em;
+      }
+    }
+    .proy-tarjetas{
+      
+      display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    >a{
+      text-decoration: none;
+      background-color: var(--Color1); 
+      transition: all .3s ease-in-out;  
+    }
+    >a:hover{
+      background-color: #1a1b22;
+    }
+    }
+  }
+
+  .cont-proy::before,.cont-proy::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    
+  }
+  .cont-proy::before{
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--Color4); 
+    border-left: 2px solid var(--Color4);
+  }
+  .cont-proy::after{
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid var(--Color4); 
+    border-right: 2px solid var(--Color4);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .proy{
+    .cont-proy{
+      position: relative;
+      width: 90vw;
+      height: auto;
+      padding: 2em;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      .proy-titulo{
+        width: 90vw;
+        >h1{
+          font-size: 1.8em;
+          width: max-content;
+          color: var(--Color4);
+          border-bottom: 1px solid var(--Color4);
+          margin-bottom: 1em;
+        }
+      }
+      .proy-tarjetas{
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      >a{
+        text-decoration: none;
+        background-color: var(--Color1); 
+        transition: all .3s ease-in-out;  
+      }
+      >a:hover{
+        background-color: #1a1b22;
+      }
+      }
+    }
+    .cont-proy::before,.cont-proy::after{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .proy{
+    .cont-proy{
+      position: relative;
+      width: 95vw;
+      height: auto;
+      padding: 2em;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      .proy-titulo{
+        width: 90vw;
+        >h1{
+          font-size: 1.5em;
+          width: max-content;
+          color: var(--Color4);
+          border-bottom: 1px solid var(--Color4);
+          margin-bottom: 1em;
+        }
+      }
+      .proy-tarjetas{
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      >a{
+        text-decoration: none;
+        background-color: var(--Color1); 
+        transition: all .3s ease-in-out;  
+      }
+      >a:hover{
+        background-color: #1a1b22;
+      }
+      }
+    }
+    .cont-proy::before,.cont-proy::after{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      
+    }
+  }
+
+}

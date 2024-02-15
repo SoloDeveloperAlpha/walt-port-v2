@@ -1,0 +1,315 @@
+@use './base/base';
+.header{
+  width: 100vw;
+  height: calc(100vh - 3em); 
+  font-family: var(--font-Inconsolata);
+  display: grid;
+  place-content: center;
+  margin-top: 2em;
+  .cont-header{
+    position: relative;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+    .cont-img-sociales{
+      width: 25em;
+      height: 25em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      >img{
+        width: 15em;
+        height: auto;
+        box-shadow: 5px 5px 0px var(--Color5),
+                    10px 10px 0px #827a3477;
+        object-fit: cover;
+      }
+      .sociales{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >ul{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          gap: 1.5em;
+          >li{
+            list-style: none;
+            >a{
+              text-decoration: none;
+              >i{
+                color: var(--Color2);
+                font-size: 1.7em;
+              }
+              >i:hover{
+                color: var(--Color4);
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .name-profesion{
+      
+      width: auto;
+      min-height: 15em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--Color4);
+      font-family: var(--font-Inconsolata);
+      gap: 1em;
+      >h2{
+        width: auto;
+        text-align: start;
+      }
+      >h1{
+        text-align: center;
+        text-wrap: balance;
+        font-weight: 600;
+        font-size: 2.5em;
+      }
+      #prof{
+        font-size: 1.8em;
+        font-weight: 500;
+          color:var(--Color2);
+      }
+      >p{
+        text-align:center;
+        text-wrap: balance;
+        line-height: 1.5;
+        #resalt{
+          color: var(--Color2);
+        }
+      }
+    }
+  }
+  .cont-header::before,.cont-header::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    
+  }
+  .cont-header::before{
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--Color3); 
+    border-left: 2px solid var(--Color3);
+  }
+  .cont-header::after{
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid var(--Color3); 
+    border-right: 2px solid var(--Color3);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .header{
+    .cont-header{
+      position: relative;
+      width: 90vw;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em;
+      .cont-img-sociales{
+        max-width: 15em;
+        height: 15em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+        >img{
+          max-width: 12em;
+          height: auto;
+          box-shadow: 5px 5px 0px var(--Color5),
+                      10px 10px 0px #827a3477;
+          object-fit: cover;
+        }
+        .sociales{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          >ul{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            >li{
+              list-style: none;
+              >a{
+                text-decoration: none;
+                >i{
+                  color: var(--Color2);
+                  font-size: 1.6em;
+                }
+                >i:hover{
+                  color: var(--Color4);
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      .name-profesion{
+        width: auto;
+        max-height: 15em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--Color4);
+        font-family: var(--font-Inconsolata);
+        gap: 1em;
+        >h2{
+          font-size: 1.5em;
+          width: auto;
+          text-align: start;
+        }
+        >h1{
+          text-align: center;
+          text-wrap: balance;
+          font-weight: 600;
+          font-size: 1.8em;
+        }
+        #prof{
+          font-size: 1.5em;
+          font-weight: 500;
+            color:var(--Color2);
+        }
+        >p{
+          font-size: 1em;
+          text-align:center;
+          text-wrap: balance;
+          line-height: 1.5;
+          #resalt{
+            color: var(--Color2);
+          }
+        }
+      }
+    }
+    .cont-header::before,.cont-header::after{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header{
+    width: 100vw;
+    height: auto; 
+    margin-top: 4em;
+    .cont-header{
+      position: relative;
+      width: 95vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em;
+      .cont-img-sociales{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+        >img{
+          width: 12em;
+          height: 12em;
+          box-shadow: 5px 5px 0px var(--Color5),
+                      10px 10px 0px #827a3477;
+          object-fit: cover;
+        }
+        .sociales{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          >ul{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            >li{
+              list-style: none;
+              >a{
+                text-decoration: none;
+                >i{
+                  color: var(--Color2);
+                  font-size: 1.7em;
+                }
+                >i:hover{
+                  color: var(--Color4);
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      .name-profesion{
+        width: 100%;
+        max-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--Color4);
+        font-family: var(--font-Inconsolata);
+        gap: .7em;
+        >h2{
+          font-size: 1.2em;
+          width: auto;
+          text-align: start;
+        }
+        >h1{
+          text-align: center;
+          text-wrap: balance;
+          font-weight: 600;
+          font-size: 1.5em;
+        }
+        #prof{
+          font-size: 1.2em;
+          font-weight: 500;
+            color:var(--Color2);
+        }
+        >p{
+          font-size: 14px;
+          text-align:center;
+          text-wrap: balance;
+          line-height: 1.5;
+          #resalt{
+            color: var(--Color2);
+          }
+        }
+      }
+    }
+    .cont-header::before,.cont-header::after{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      
+    }
+  }
+}

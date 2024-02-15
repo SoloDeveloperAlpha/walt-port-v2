@@ -1,0 +1,296 @@
+@use './base/base';
+
+.hab{
+  width: 100vw;
+  height: calc(100vh + auto);
+  font-family: var(--font-Inconsolata);
+  display: grid;
+  place-content: center;
+  padding-top: 3em;
+  .cont-hab{
+    position: relative;
+    padding: 3em;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--Color4);
+    gap: 1.5em;
+    .hab-type{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 1.5em;
+      >h1{
+        width: max-content;
+        border-bottom: 1px solid var(--Color4);
+      }
+      >ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        >li{
+          font-size: 18px;
+        }
+      }
+    }
+    .hab-type-explain{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      >img{
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    
+  }
+  .skills{
+    width: 100%;
+    height: auto;
+    margin-top: 8em;
+    margin-bottom: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    >h1{
+      text-align: center;
+      color: var(--Color4);
+    }
+    >ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      >li{
+        padding: 10px;
+        >i{
+          font-size: 2em;
+          border-radius: 50%;
+          background-color: white;
+          padding: 2px;
+        }
+        #html5{
+          color: orangered;
+        }
+        #css3{
+          color: #0883d8;
+        }
+        #javascript{
+          color: gold;
+        }
+        #bootstrap{
+          color: purple;
+        }
+        #git-merge{
+          color: tomato;
+        }
+        #github{
+          color: #16171d;
+        }
+        #reactjs{
+          color: skyblue;
+        }
+      }
+    }
+    
+  }
+  .cont-hab::before,.cont-hab::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    
+  }
+  .cont-hab::before{
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--Color4); 
+    border-left: 2px solid var(--Color4);
+  }
+  .cont-hab::after{
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid var(--Color4); 
+    border-right: 2px solid var(--Color4);
+  }
+}
+
+#html5{
+  color: orangered;
+}
+#css3{
+  color: #0883d8;
+}
+#javascript{
+  color: gold;
+}
+#bootstrap{
+  color: purple;
+}
+#git-merge{
+  color: tomato;
+}
+#github{
+  color: #16171d;
+}
+#reactjs{
+  color: skyblue;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .hab{
+    .cont-hab{
+      position: relative;
+      padding: 2em;
+      width: 90vw;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: var(--Color4);
+      gap: 1.5em;
+      .hab-type{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1.5em;
+        >h1{
+          font-size: 1.8em;
+          width: max-content;
+          border-bottom: 1px solid var(--Color4);
+        }
+        >ul{
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          >li{
+            font-size: 1em;
+          }
+        }
+      }
+      .hab-type-explain{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        >img{
+          object-fit: cover;
+        }
+      }
+      
+    }
+    .cont-hab::before,.cont-hab::after{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      
+    }
+    .skills{
+      >h1{
+        font-size: 1.8em;
+        text-align: center;
+        color: var(--Color4);
+      }
+      >ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >li{
+          padding: 10px;
+          >i{
+            font-size: 1.5em;
+            border-radius: 50%;
+            background-color: white;
+            padding: 2px;
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hab{
+    .cont-hab{
+      position: relative;
+      padding: 2em;
+      width: 95vw;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: var(--Color4);
+      gap: 1.5em;
+      .hab-type{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1.5em;
+        >h1{
+          font-size: 1.5em;
+          width: max-content;
+          border-bottom: 1px solid var(--Color4);
+        }
+        >ul{
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          >li{
+            font-size: 14px;
+          }
+        }
+      }
+      .hab-type-explain{
+        display: none;
+      }
+      
+    }
+    .cont-hab::before,.cont-hab::after{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      
+    }
+    .skills{
+      >h1{
+        font-size: 1.5em;
+        text-align: center;
+        color: var(--Color4);
+      }
+      >ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >li{
+          padding: 10px;
+          >i{
+            font-size: 1.5em;
+            border-radius: 50%;
+            background-color: white;
+            padding: 2px;
+          }
+        }
+      }
+      
+    }
+  }
+}

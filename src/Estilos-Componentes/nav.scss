@@ -1,0 +1,134 @@
+@use './base/base';
+
+.nav{
+  position:fixed;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  z-index: 1000;
+  background-color: var(--Color1);
+  >ul{
+    margin-right: 4em;
+    width: calc(50vw - 4em);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    >li{
+      list-style: none;
+      >a{
+        position: relative;
+        text-decoration: none;
+        color: #edeadf;
+        font-family: var(--font-Inconsolata);
+        font-weight: 600;
+      }
+
+      >a:hover{
+        text-decoration:underline;
+        color: var(--Color4);
+      }
+    }
+  }
+  .menu-boton{
+    display: none;
+    padding: 1em;
+    >i{
+      font-size: 1.5em;
+      color: var(--Color4);
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .nav{
+    position:fixed;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    z-index: 1000;
+    background-color: var(--Color1);
+    >ul{
+      margin-right: 4em;
+      width: calc(50vw - 4em);
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      >li{
+        list-style: none;
+        >a{
+          position: relative;
+          text-decoration: none;
+          color: #edeadf;
+          font-family: var(--font-Inconsolata);
+          font-weight: 600;
+          font-size: 14px;
+        }
+  
+        >a:hover{
+          text-decoration:underline;
+          color: var(--Color4);
+        }
+      }
+    }
+    .menu-boton{
+      display: none;
+      padding: 1em;
+      >i{
+        font-size: 1.5em;
+        color: var(--Color4);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav{
+    position:fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    z-index: 1000;
+    background-color: var(--Color1);
+    >ul{
+      display: none;
+      >li{
+        list-style: none;
+        >a{
+          position: relative;
+          text-decoration: none;
+          color: #edeadf;
+          font-family: var(--font-Inconsolata);
+          font-weight: 600;
+          font-size: 14px;
+        }
+  
+        >a:hover{
+          text-decoration:underline;
+          color: var(--Color4);
+        }
+      }
+    }
+    .menu-boton{
+      display: flex;
+      >i{
+        font-size: 1.5em;
+        color: var(--Color4);
+        cursor: pointer;
+      }
+    }
+  }
+}

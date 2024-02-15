@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.Contenedor-Principal{
+  width: 100vw;
+  height: auto;
+  background-color: var(--Color1);
+}
