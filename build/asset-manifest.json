@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/walt-port-v2/build/static/css/main.27c65d62.css",
-    "main.js": "/walt-port-v2/build/static/js/main.4186d6ea.js",
+    "main.css": "/walt-port-v2/build/static/css/main.8060aa39.css",
+    "main.js": "/walt-port-v2/build/static/js/main.2def7e50.js",
     "index.html": "/walt-port-v2/build/index.html",
-    "main.27c65d62.css.map": "/walt-port-v2/build/static/css/main.27c65d62.css.map",
-    "main.4186d6ea.js.map": "/walt-port-v2/build/static/js/main.4186d6ea.js.map"
+    "main.8060aa39.css.map": "/walt-port-v2/build/static/css/main.8060aa39.css.map",
+    "main.2def7e50.js.map": "/walt-port-v2/build/static/js/main.2def7e50.js.map"
   },
   "entrypoints": [
-    "static/css/main.27c65d62.css",
-    "static/js/main.4186d6ea.js"
+    "static/css/main.8060aa39.css",
+    "static/js/main.2def7e50.js"
   ]
 }
