@@ -32,7 +32,7 @@ function Proyectos(){
             <TarjetaProy fecha="OCT 20 - OCT 23 2023" titulo="Walter (PORTFOLIO) V1" descripcion="La primera version de la creacion de mi Portfolio web" ruta="images/portfoliov1.png" tec1="html5" id1="html5" tec2="css3" id2="css3" tec3="javascript" id3="javascript"/>
             </a>
             <a href="https://solodeveloperalpha.github.io/mis-tareas/build/" target="_blank">
-            <TarjetaProy fecha="MAR 8 - MAR 9 2024" titulo="Walter (PORTFOLIO) V1" descripcion="Creación de lista de Tareas" ruta="images/mis-tareas.jpg" tec1="html5" id1="html5" tec2="css3" id2="css3" tec3="reactjs" id3="reactjs"/>
+            <TarjetaProy fecha="MAR 8 - MAR 9 2024" titulo="Mis-Tareas" descripcion="Creación de lista de Tareas" ruta="images/mis-tareas.jpg" tec1="html5" id1="html5" tec2="css3" id2="css3" tec3="reactjs" id3="reactjs"/>
             </a>
         </div>
         
