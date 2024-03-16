@@ -25,6 +25,9 @@ function Header(){
           <h1><span id="resalt">Walter</span> Astudillo Zevallos</h1>
           <span id="prof">Desarrollador Front End</span>
           <p>Realizo la maquetacion, diseño y ejecucion de sitios web para una mejor <span id="resalt">experiencia de usuario</span></p>
+          <div className="boton-desc">
+            <a href="CV-WALTER-ASTUDILLO-DFE.pdf" download="CV-WALTER-ASTUDILLO-DFE.pdf">DESCARGAR CV</a>
+          </div>
         </div>
       </div>
 
