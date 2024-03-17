@@ -9,6 +9,9 @@ function Navegador(){
   };
   return(
     <div className="nav">
+      <div className="waz">
+          <a href="#header">W</a>
+        </div>
       <div className="nav-container">
         <ul>
           <li><a href="#sobremi">SOBRE MI</a></li>

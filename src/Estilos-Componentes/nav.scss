@@ -3,6 +3,30 @@
 .nav{
   display: flex;
   flex-direction: row;
+  .waz{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6em;
+    height: 6em;
+    background: linear-gradient(135deg, var(--Color2) 50% , var(--Color1) 50%);
+    text-shadow: 2px 2px 2px #873c11;
+    z-index: 2000;
+    >a{
+      width: 100%;
+      height: 100%;
+      display: grid;
+    place-content: center;
+      text-decoration: none;
+      color: #edeadf;
+      font-size: 2em;
+    font-weight: bold;
+      transition: font-size .3s ease-in-out;
+    }
+    >a:hover{
+      font-size: 2.2em;
+    }
+  }
   .nav-container{
     position:fixed;
   width: 100%;

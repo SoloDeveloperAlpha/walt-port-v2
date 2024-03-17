@@ -3,7 +3,7 @@ import '../Estilos-Componentes/header.scss';
 
 function Header(){
   return(
-    <div className="header">
+    <div className="header" id="header">
       <div className="cont-header">
         <div className="cont-img-sociales">
           <img src="images/pro_foto_corto.jpg" alt="Walter Astudillo Z" />
