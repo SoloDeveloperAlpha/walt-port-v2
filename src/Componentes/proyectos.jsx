@@ -20,7 +20,7 @@ function Proyectos(){
             <a href="https://solodeveloperalpha.github.io/pokeDexter/" target="_blank">
             <TarjetaProy fecha="OCT 20 - OCT 25 2023" titulo="PokeDexter" descripcion="Pokedex pokemon el cual permite ver a todos los pokemon de todas las generaciones hasta la fecha, ademas brinda una pequeña descripcion de cada uno , ala vez que muestra su tipo." ruta="images/apppokedex.jpg" tec1="html5" id1="html5" tec2="css3" id2="css3" tec3="javascript" id3="javascript"/>
             </a>
-            <a href="https://spotifychronohits.firebaseapp.com" target="_blank">
+            <a href="https://chronohits-spt.web.app" target="_blank">
             <TarjetaProy fecha="NOV 01 - DEC 20 2023" titulo="Spotify-ChronoHits" descripcion="App no oficial de Spotify, inluye cosas adicionales como calificacion por estrellas y la adicion de CHRONOHITS el cual muestra las 3 mejores canciones de cada artista , todo usando tu cuenta de Spotify." ruta="images/appChronoHits.jpg" tec1="html5" id1="html5" tec2="css3" id2="css3" tec3="javascript" id3="javascript"/>
             </a>
 
